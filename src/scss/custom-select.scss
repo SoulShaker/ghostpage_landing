@@ -1,0 +1,29 @@
+.custom-select {
+
+	&:after {
+		content: "\f078";
+		display: inline-block;
+		font-size: 10px;
+		font-family: FontAwesome;
+		color: #cbcbcb;
+	}
+
+	&__input {
+		cursor: pointer;
+		padding: 5px 10px 5px 5px;
+		appearance: none;
+		border: none;
+		background: transparent;
+		font-family: "Lato", sans-serif;
+		@include font(16px,#cbcbcb,400,22px);
+
+		@media screen and (max-width: 480px) {
+			font-size: 12px;
+		}
+
+		option {
+			font-family: "Lato", sans-serif;
+			@include font(16px,#cbcbcb,400,1);
+		}
+	}
+}

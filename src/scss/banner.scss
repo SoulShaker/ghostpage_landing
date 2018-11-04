@@ -1,0 +1,49 @@
+.wrapper-banner {
+	height: 943px;
+	background: url(images/banner-bg.jpg);
+	background-size: cover;
+
+	@media screen and (max-width: 480px) {
+		height: 100vh;
+	}
+
+	&_content-centering {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.banner {
+	padding-top: 65px;
+	max-width: 800px;
+	z-index: 3;
+
+	@media screen and (max-width: 480px) {
+		padding: 0 20px;
+	}
+	&__header {
+		font-family: 'Lato', sans-serif;
+		text-transform: uppercase;
+		@include font(70px,#fff,700,1.4);
+
+		@media screen and (max-width: 480px) {
+			font-size: 40px;
+		}
+	}
+
+	&__text {
+		margin: 0 auto;
+		font-family: Georgia, sans-serif;
+		font-style: italic;
+		@include font(32px,#fff,normal,1.4);
+
+		@media screen and (max-width: 480px) {
+			font-size: 14px;
+		}
+	}
+
+	&_text-centering {
+		text-align: center;
+	}
+}

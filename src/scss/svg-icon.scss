@@ -1,0 +1,35 @@
+.svg-icon {
+	&__stroke {
+		stroke: #f9d423;
+		stroke-width: 6;
+		stroke-linecap: round;
+		fill: none;
+
+		&_no-stroke {
+			stroke-width: 0;
+			fill: #f9d423;
+		}
+		&_fill-red {
+			fill: #f1540f;
+		}
+		&_fill-blue {
+			fill: #0faff1;
+		}
+		&_fill-grey {
+			fill: #95a5a6;
+		}
+	}
+	&__text {
+		text-anchor: middle;
+
+		fill: #f9d423;
+
+		&_fill-white {
+			fill: #fff;
+		}
+
+		&_larger {
+			font-size: 24px;
+		}
+	}
+}

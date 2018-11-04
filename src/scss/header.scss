@@ -1,0 +1,39 @@
+
+.header {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #4a4a4a;
+	min-height: 91px;
+
+	&__logo {
+		display: inline-block;
+		font-size: 0;
+
+		img {
+			vertical-align: bottom;
+		}
+
+		&_left-align {
+			margin-right: auto;
+		}
+
+		&_opacity {
+			img {
+				opacity: .5;
+			}
+		}
+	}
+	&_margin {
+		margin-bottom: 34px;
+	}
+	&_smaller {
+		min-height: 78px;
+	}
+
+	&_absolute {
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 3;
+	}
+}

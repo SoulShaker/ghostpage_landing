@@ -1,0 +1,222 @@
+@import "scss/mixins/font";
+@import "scss/mixins/object-fit";
+@import "scss/fonts";
+@import "scss/shadow";
+@import "scss/pattern";
+@import "scss/menu";
+//@import "scss/navigation";
+@import "scss/header";
+@import "scss/banner";
+@import "scss/signin";
+@import "scss/custom-input";
+@import "scss/custom-select";
+@import "scss/table";
+@import "scss/feature";
+@import "scss/svg-icon";
+@import "scss/plan";
+@import "scss/price-plans";
+@import "scss/profile";
+@import "scss/about-us";
+@import "scss/testimonials";
+@import "scss/footer";
+@import "scss/footer-menu";
+@import "scss/custom-carousel";
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+h1, p, figure {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+address {
+	display: inline-block;
+	font-style: normal;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+.section-header {
+	font-family: "Lato Heavy", sans-serif;
+	@include font(24px,#383737,normal,1);
+	margin: 0 0 25px 0;
+	text-align: center;
+
+	&_type2 {
+		font-family: "Lato", sans-serif;
+		@include font(35px,#303030,900,1);
+		margin: 0 0 30px 0;
+		text-align: left;
+
+		span {
+			font-family: "Lato Semibold", sans-serif;
+		}
+	}
+}
+
+q {
+	display: block;
+	font-family: "Lato", sans-serif;
+	@include font(20px,#fff,300,1.4);
+}
+
+.under-header {
+	font-family: "Montserrat", sans-serif;
+	@include font(16px,#a2a2a2,100,1.4);
+	text-align: center;
+	margin-bottom: 6px;
+}
+
+button {
+	box-shadow: none;
+	border: none;
+	outline: none;
+}
+
+.custom-border {
+	background-image: linear-gradient(to right, #d7d7d7 50%, rgba(255, 255, 255, 0) 50%);
+	background-position: top;
+	background-size: 8px 2px;
+	background-repeat: repeat-x;
+
+	&_right {
+		background-image: linear-gradient(to bottom, #d7d7d7 50%, rgba(255, 255, 255, 0) 50%);
+		background-position: right;
+		background-size: 2px 8px;
+		background-repeat: repeat-y;
+	}
+}
+
+.container {
+	max-width: 1200px;
+	//box-sizing: border-box;
+	margin: 0 auto;
+	@media screen and (max-width: 1220px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	&_small {
+		max-width: 891px;
+		padding: 90px 0;
+
+		@media screen and (max-width: 1220px) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+}
+
+.pl-0 {
+	padding-left: 0;
+}
+
+.pl-1 {
+	padding-left: 32px;
+}
+
+.pr-0 {
+	padding-right: 0;
+}
+
+.pr-1 {
+	padding-right: 32px;
+}
+
+.banner-anchor {
+	position: absolute;
+	bottom: 47px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	text-decoration: none;
+	color: #fff;
+	z-index: 3;
+
+	i {
+		font-size: 28px;
+		vertical-align: bottom;
+	}
+
+}
+
+.select-link {
+	font-family: "Lato", sans-serif;
+	@include font(16px,#282828,700,1);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.custom-carousel {
+	z-index: 100;
+}
+
+
+.text-block {
+	max-width: 320px;
+
+	&__header {
+		@include font(20px,#fff,400,1);
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	&__body {
+		@include font(10px,#fff,400,1.8);
+		text-transform: uppercase;
+	}
+}
+
+.menu-toggle {
+	display: none;
+
+	i {
+		color: #fff;
+		font-size: 24px;
+	}
+	@media screen and (max-width: 980px){
+		display: inline-block;
+	}
+}
+.navigation {
+	transition: transform .3s linear;
+	@media screen and (max-width: 980px){
+		position: absolute;
+		top: 93px;
+		left: 0;
+		right: 0;
+		padding: 10px;
+	}
+
+	&_footer {
+		@media screen and (max-width: 980px){
+			top: 79px;
+			background: #fff;
+		}
+	}
+}
+@media screen and (max-width: 980px) {
+	#menu-toggle + .navigation, #menu-toggle_footer + .navigation {
+		transform: translateX(-1000px);
+	}
+
+	#menu-toggle:checked + .navigation, #menu-toggle_footer:checked + .navigation {
+		transform: translateX(0);
+	}
+}
+
+#menu-toggle_footer:checked + .navigation {
+	transform: translateX(0);
+}

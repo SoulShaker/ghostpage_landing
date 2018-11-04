@@ -1,0 +1,31 @@
+.pattern {
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		background: linear-gradient(135deg, rgba(178, 178, 178, .44) 10%, rgba(251, 251, 251, .44) 10%,
+				rgba(251, 251, 251, .44) 50%, rgba(178, 178, 178, .44) 50%, rgba(178, 178, 178, .44) 60%,
+				rgba(251, 251, 251, .44) 60%, rgba(251, 251, 251, .44) 100%);
+		background-size: 7.07px 7.07px;
+	}
+
+	&_type2 {
+		&:after {
+			background: linear-gradient(135deg, rgba(178, 178, 178, .15) 10%, rgba(251, 251, 251, .15) 10%,
+					rgba(251, 251, 251, .15) 50%, rgba(178, 178, 178, .15) 50%, rgba(178, 178, 178, .15) 60%,
+					rgba(251, 251, 251, .15) 60%, rgba(251, 251, 251, .15) 100%);
+			background-size: 10px 10px;
+		}
+	}
+
+	&_height-50 {
+		&:after {
+			height: 50%;
+		}
+	}
+}

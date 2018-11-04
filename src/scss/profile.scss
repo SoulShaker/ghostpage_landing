@@ -1,0 +1,72 @@
+.profile {
+
+	&__figure {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__picture {
+		margin-bottom: 17px;
+		overflow: hidden;
+		border: 5px solid #e5e5e5;
+		border-radius: 50%;
+		img {
+			width: 90px;
+			height: 90px;
+			vertical-align: bottom;
+			@include object-fit(cover);
+		}
+
+		&_scale {
+			img {
+				transform: translateY(5px) scale(1.15);;
+			}
+		}
+		&_scale-big {
+			img {
+				transform: translateY(10px) scale(1.25);
+			}
+		}
+
+	}
+	&__caption {
+		font-family: "Lato Semibold", sans-serif;
+		@include font(17px,#303030,normal,1);
+		text-align: center;
+		margin-bottom: 10px;
+
+		&_regular {
+			font-family: "Lato", sans-serif;
+			font-weight: 400;
+		}
+		&_smaller {
+			font-size: 15px;
+		}
+		&_grey {
+			color: #8e8e8e;
+		}
+	}
+	&__link {
+		display: inline-block;
+		color: #bfbfbf;
+
+		&:hover {
+			color: #1f89ba;
+		}
+		&:not(:last-child) {
+			padding-right: 20px;
+		}
+	}
+}
+
+.profiles {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	.profile {
+		@media screen and (max-width: 980px) {
+			margin-bottom: 20px;
+		}
+	}
+}

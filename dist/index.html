@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <title>Ghost Host</title>
+<link href="main.css" rel="stylesheet"></head>
+<body>
+<header>
+  <div class="container header header_absolute">
+    <h1 class="header__logo header__logo_left-align">
+      <a href="/">
+        <img src="img/logo.png?47e4b58cd59d4938e1b602bea5149223" alt="Ghost Host: Domains, Hosting, Cloud Services" width="133" height="29">
+      </a>
+    </h1>
+    <label for="menu-toggle" class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></label>
+    <input id="menu-toggle" type="checkbox" hidden>
+    <nav class="navigation">
+      <ul class="menu">
+        <li class="menu__item menu__item_border-hover"><a href="#">Home</a></li>
+        <li class="menu__item menu__item_border-hover"><a class="scroll-nav" href="#domains">Domain</a></li>
+        <li class="menu__item menu__item_border-hover"><a class="scroll-nav" href="#price-plans">Hosting</a>
+        </li>
+        <li class="menu__item menu__item_border-hover"><a class="scroll-nav" href="#testimonials">Clients</a>
+        </li>
+        <li class="menu__item menu__item_border-hover"><a href="#">Blog</a></li>
+        <li class="menu__item menu__item_border-hover"><a href="#">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrapper-banner wrapper-banner_content-centering shadow">
+    <div class="banner banner_text-centering">
+      <p class="banner__header">Hello!</p>
+      <p class="banner__text">We love your work...<br>
+        And We're taking it seriously...</p>
+    </div>
+  </div>
+  <nav class="sign-block">
+    <div class="sign-block__link sign-block__link_dark-green">
+      <a href="#">Login</a>
+    </div>
+    <div class="sign-block__link sign-block__link_lighter-green">
+      <a href="#">Register</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <section id="domains">
+    <div class="container container_small">
+      <h2 class="section-header">Would you like to buy a new domain ?</h2>
+      <p class="under-header">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Suspendisse auctor mauris ac nulla interdum, id molestier.</p>
+      <div class="custom-input">
+        <div class="custom-input__prepend">
+          <span class="custom-input__text">www.</span>
+        </div>
+        <input class="custom-input__input" type="text" placeholder="What do you want?" aria-label="Domain Name">
+        <div class="custom-input__append custom-select">
+          <select class="custom-select__input" name="domain-zone" id="domain-zone" aria-label="Domain Zone">
+            <option value="">.com</option>
+            <option value="">.net</option>
+            <option value="">.org</option>
+          </select>
+        </div>
+      </div>
+      <table class="table">
+        <tbody>
+        <tr class="table__row">
+          <td class="table__cell">.COM</td>
+          <td class="table__cell">1 Year</td>
+          <td class="table__cell">$9.00 USD</td>
+          <td class="table__cell">Transfer Price No</td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__cell">.NET</td>
+          <td class="table__cell">1 Year</td>
+          <td class="table__cell">$9.00 USD</td>
+          <td class="table__cell">Transfer Price No</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div id="price-plans" class="pattern pattern_height-50">
+    <div class="price-plans shadow shadow_darker shadow_height-50 shadow_index-10">
+      <div class="container">
+        <input class="plans-carousel__activator" type="radio" id="Basic" name="planactivator" checked>
+        <input class="plans-carousel__activator" type="radio" id="Normal" name="planactivator">
+        <input class="plans-carousel__activator" type="radio" id="Big" name="planactivator">
+        <input class="plans-carousel__activator" type="radio" id="Biggest" name="planactivator">
+        <div class="plans-carousel__controls">
+          <label class="custom-carousel__control custom-carousel__control--backward" for="Biggest"></label>
+          <label class="custom-carousel__control custom-carousel__control--forward" for="Normal"></label>
+        </div>
+        <div class="plans-carousel__controls">
+          <label class="custom-carousel__control custom-carousel__control--backward" for="Basic"></label>
+          <label class="custom-carousel__control custom-carousel__control--forward" for="Big"></label>
+        </div>
+        <div class="plans-carousel__controls">
+          <label class="custom-carousel__control custom-carousel__control--backward" for="Normal"></label>
+          <label class="custom-carousel__control custom-carousel__control--forward" for="Biggest"></label>
+        </div>
+        <div class="plans-carousel__controls">
+          <label class="custom-carousel__control custom-carousel__control--backward" for="Big"></label>
+          <label class="custom-carousel__control custom-carousel__control--forward" for="Basic"></label>
+        </div>
+        <div class="price-plans__wrapper">
+          <div class="plan">
+            <div class="plan__header">
+              <div class="feature">
+                <div class="feature__icon">
+                  <svg class="svg-icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+                       version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path class="svg-icon__stroke" d="M52,27.5 A24.5,24.5 0 0,0 27.5,3"/>
+                    <text class="svg-icon__text" x="28" y="33">&#xf13d;</text>
+                  </svg>
+                </div>
+                <p class="feature__name feature__name_no-margin">Basic Package</p>
+              </div>
+            </div>
+            <div class="plan__body">
+              <table class="specs-table">
+                <tbody>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Disk Space (GB)</td>
+                  <td class="specs-table__value">50</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Subdomains</td>
+                  <td class="specs-table__value">50</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Transfer (GB)</td>
+                  <td class="specs-table__value">50</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Data bases</td>
+                  <td class="specs-table__value">1</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Data bases</td>
+                  <td class="specs-table__value">1</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Control Panel & FTP</td>
+                  <td class="specs-table__value"></td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Free Support</td>
+                  <td class="specs-table__value"></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="plan__footer">
+              <p class="price">$15<span>/Mo</span></p>
+              <a class="select-link" href="#">Select plan</a>
+            </div>
+          </div>
+          <div class="plan plan_grey-theme">
+            <div class="plan__header">
+              <div class="feature">
+                <div class="feature__icon">
+                  <svg class="svg-icon" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path class="svg-icon__stroke" d="M27,52 A24.5,24.5 0 0 0 27,3"/>
+                    <text class="svg-icon__text" x="28" y="33">&#xf123;</text>
+                  </svg>
+                </div>
+                <p class="feature__name feature__name_no-margin">Normal Package</p>
+              </div>
+            </div>
+            <div class="plan__body">
+              <table class="specs-table">
+                <tbody>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Disk Space (GB)</td>
+                  <td class="specs-table__value">100</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Subdomains</td>
+                  <td class="specs-table__value">100</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Transfer (GB)</td>
+                  <td class="specs-table__value">100</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Data bases</td>
+                  <td class="specs-table__value">2</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Data bases</td>
+                  <td class="specs-table__value">2</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Control Panel & FTP</td>
+                  <td class="specs-table__value"></td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Free Support</td>
+                  <td class="specs-table__value"></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="plan__footer">
+              <p class="price">$30<span>/Mo</span></p>
+              <a class="select-link" href="#">Select plan</a>
+            </div>
+          </div>
+          <div class="plan plan_red-theme">
+            <div class="plan__header">
+              <div class="feature">
+                <div class="feature__icon">
+                  <svg class="svg-icon" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path class="svg-icon__stroke" d="M3,27 A24.5,24.5 0 1 0 27,3"></path>
+                    <text class="svg-icon__text" x="28" y="33">&#xf005;</text>
+                  </svg>
+                </div>
+                <p class="feature__name feature__name_no-margin">Big Package</p>
+              </div>
+            </div>
+            <div class="plan__body">
+              <table class="specs-table">
+                <tbody>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Disk Space (GB)</td>
+                  <td class="specs-table__value">150</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Subdomains</td>
+                  <td class="specs-table__value">150</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Transfer (GB)</td>
+                  <td class="specs-table__value">150</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Data bases</td>
+                  <td class="specs-table__value">4</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Data bases</td>
+                  <td class="specs-table__value">4</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Control Panel & FTP</td>
+                  <td class="specs-table__value"></td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Free Support</td>
+                  <td class="specs-table__value"></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="plan__footer">
+              <p class="price">$40<span>/Mo</span></p>
+              <a class="select-link" href="#">Select plan</a>
+            </div>
+          </div>
+          <div class="plan plan_green-theme">
+            <div class="plan__header">
+              <div class="feature">
+                <div class="feature__icon">
+                  <svg class="svg-icon" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <circle class="svg-icon__stroke" cx="28" cy="28" r="24.5"/>
+                    <text class="svg-icon__text" x="28" y="33">&#xf219;</text>
+                  </svg>
+                </div>
+                <p class="feature__name feature__name_no-margin">Biggest Package</p>
+              </div>
+            </div>
+            <div class="plan__body">
+              <table class="specs-table">
+                <tbody>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Disk Space (GB)</td>
+                  <td class="specs-table__value">250</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Subdomains</td>
+                  <td class="specs-table__value">250</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Transfer (GB)</td>
+                  <td class="specs-table__value">250</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Data bases</td>
+                  <td class="specs-table__value">6</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Data bases</td>
+                  <td class="specs-table__value">6</td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Control Panel & FTP</td>
+                  <td class="specs-table__value"></td>
+                </tr>
+                <tr class="specs-table__row">
+                  <td class="specs-table__name">Free Support</td>
+                  <td class="specs-table__value"></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="plan__footer">
+              <p class="price">$70<span>/Mo</span></p>
+              <a class="select-link" href="#">Select plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="about-us" id="about-us">
+    <div class="container">
+      <div class="about-us__wrapper custom-border">
+        <div class="about-us__block about-us__block_fixed about-us__block_padding-right custom-border_right">
+          <h2 class="section-header section-header_type2">About <span>Us</span></h2>
+          <p class="about-us__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Praesent feugiat eget diam sit amet molestie.Curabitur.
+            ut ipsum bibendum tortor lacinia fermentum nec joeıa.
+            Mauris at augue libero. Fusce posuere, sapien nec poır.
+            Uaee augsuada sed mauris in tincidunt...</p>
+        </div>
+        <div class="about-us__block about-us__block_padding-left">
+          <div class="profiles">
+            <div class="profile">
+              <figure class="profile__figure">
+                <div class="profile__picture">
+                  <img class="object-fit-image" src="img/timthumb.jpg?a3d055942aa93ff1d4dce5a4e89a5a03"
+                       alt="Jonny Doe Designer" width="200" height="200">
+                </div>
+                <figcaption>
+                  <p class="profile__caption">Jonny Doe</p>
+                  <p class="profile__caption profile__caption_smaller profile__regular
+                                    profile__caption_grey">Designer</p>
+                </figcaption>
+              </figure>
+              <ul class="profile__links">
+                <li class="profile__link"><a class="fa fa-facebook" href=""></a></li>
+                <li class="profile__link"><a class="fa fa-twitter" href=""></a></li>
+                <li class="profile__link"><a class="fa fa-link" href=""></a></li>
+              </ul>
+            </div>
+            <div class="profile">
+              <figure class="profile__figure">
+                <div class="profile__picture profile__picture_scale">
+                  <img class="object-fit-image" src="img/img1-md.jpg?d7502ef4c6d8660d59379d8acbf42a21"
+                       alt="John Doe Designer" width="440" height="444">
+                </div>
+                <figcaption>
+                  <p class="profile__caption">John Doe</p>
+                  <p class="profile__caption profile__caption_smaller profile__regular
+                                    profile__caption_grey">Designer</p>
+                </figcaption>
+              </figure>
+              <ul class="profile__links">
+                <li class="profile__link"><a class="fa fa-facebook" href=""></a></li>
+                <li class="profile__link"><a class="fa fa-twitter" href=""></a></li>
+                <li class="profile__link"><a class="fa fa-link" href=""></a></li>
+              </ul>
+            </div>
+            <div class="profile">
+              <figure class="profile__figure">
+                <div class="profile__picture profile__picture_scale-big">
+                  <img class="object-fit-image" src="img/team4-large.jpg?f0c43717b3073ac6ee578e32f5c4eaea"
+                       alt="Johnathan Doe Designer" width="400" height="400">
+                </div>
+                <figcaption>
+                  <p class="profile__caption">Johnathan Doe</p>
+                  <p class="profile__caption profile__caption_smaller profile__regular
+                                    profile__caption_grey">Designer</p>
+                </figcaption>
+              </figure>
+              <ul class="profile__links">
+                <li class="profile__link"><a class="fa fa-facebook" href=""></a></li>
+                <li class="profile__link"><a class="fa fa-twitter" href=""></a></li>
+                <li class="profile__link"><a class="fa fa-link" href=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="shadow shadow_lighter shadow_index-10" id="testimonials">
+    <div class="testimonials pattern pattern_type2">
+      <div class="custom-carousel">
+        <input class="custom-carousel__activator" type="radio" id="A" name="activator" checked>
+        <input class="custom-carousel__activator" type="radio" id="B" name="activator">
+        <input class="custom-carousel__activator" type="radio" id="C" name="activator">
+        <div class="custom-carousel__track">
+          <div class="custom-carousel__slide quote">
+            <q class="quote__text">Suspendisse tempor turpis odio, sit amet cursus leo consequat non.
+              Maecenas
+              lacinia faucibus enimqui
+              interdum dolor pulvinar vitae.</q>
+            <div class="quote__block">
+              <p class="quote__author">John Doe</p>
+              <div class="custom-carousel__indicators">
+                <label class="custom-carousel__indicator" for="A"></label>
+                <label class="custom-carousel__indicator" for="B"></label>
+                <label class="custom-carousel__indicator" for="C"></label>
+              </div>
+            </div>
+          </div>
+          <div class="custom-carousel__slide quote">
+            <q class="quote__text">Received the likewise law graceful his. Nor might set along charm now
+              equal green.</q>
+            <div class="quote__block">
+              <p class="quote__author">Johnathan Doe</p>
+              <div class="custom-carousel__indicators">
+                <label class="custom-carousel__indicator" for="A"></label>
+                <label class="custom-carousel__indicator" for="B"></label>
+                <label class="custom-carousel__indicator" for="C"></label>
+              </div>
+            </div>
+          </div>
+          <div class="custom-carousel__slide quote">
+            <q class="quote__text">Mrs for recommend exquisite household eagerness preserved now.
+              My improved honoured he am ecstatic quitting greatest formerly.</q>
+            <div class="quote__block">
+              <p class="quote__author">Johnny Doe</p>
+              <div class="custom-carousel__indicators">
+                <label class="custom-carousel__indicator" for="A"></label>
+                <label class="custom-carousel__indicator" for="B"></label>
+                <label class="custom-carousel__indicator" for="C"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="features">
+    <div class="container features">
+      <a class="feature" href="#">
+        <div class="feature__icon feature__icon_larger">
+          <svg class="svg-icon" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+               viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <circle class="svg-icon__stroke svg-icon__stroke_no-stroke" cx="30" cy="30" r="30"/>
+            <text class="svg-icon__text svg-icon__text_fill-white
+                    svg-icon__text_larger svg-icon__text_align-center" x="50%" y="50%" dy=".3em">&#xf0e7;
+            </text>
+          </svg>
+        </div>
+        <p class="feature__name feature__name_no-upper">Fast Servers</p>
+        <p class="feature__description">Nulla dapibus neque augue, quis
+          tincidunt tortor aliquam vitae.</p>
+      </a>
+      <a class="feature" href="#">
+        <div class="feature__icon feature__icon_larger">
+          <svg class="svg-icon" xmlns:xlink="http://www.w3.org/1999/xlink"
+               viewBox="0 0 60 60" version="1.1"
+               xmlns="http://www.w3.org/2000/svg">
+            <circle class="svg-icon__stroke svg-icon__stroke_no-stroke svg-icon__stroke_fill-blue" cx="30"
+                    cy="30" r="30"/>
+            <text class="svg-icon__text svg-icon__text_fill-white
+                    svg-icon__text_larger svg-icon__text_align-center" x="50%" y="50%" dy=".3em">&#xf0c2;
+            </text>
+          </svg>
+        </div>
+        <p class="feature__name feature__name_no-upper">Cloud Servers</p>
+        <p class="feature__description">Nulla dapibus neque augue, quis
+          tincidunt tortor aliquam vitae.</p>
+      </a>
+      <a class="feature" href="#">
+        <div class="feature__icon feature__icon_larger">
+          <svg class="svg-icon" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" version="1.1"
+               xmlns="http://www.w3.org/2000/svg">
+            <circle class="svg-icon__stroke svg-icon__stroke_no-stroke svg-icon__stroke_fill-grey" cx="30"
+                    cy="30" r="30"/>
+            <text class="svg-icon__text svg-icon__text_fill-white
+                    svg-icon__text_larger svg-icon__text_align-center" x="50%" y="50%" dy=".3em">&#xf047;
+            </text>
+          </svg>
+        </div>
+        <p class="feature__name feature__name_no-upper">Domain Transfer</p>
+        <p class="feature__description">Nulla dapibus neque augue, quis
+          tincidunt tortor aliquam vitae.</p>
+      </a>
+      <a class="feature" href="#">
+        <div class="feature__icon feature__icon_larger">
+          <svg class="svg-icon" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 60" version="1.1"
+               xmlns="http://www.w3.org/2000/svg">
+            <circle class="svg-icon__stroke svg-icon__stroke_no-stroke svg-icon__stroke_fill-red" cx="30"
+                    cy="30" r="30"/>
+            <text class="svg-icon__text svg-icon__text_fill-white
+                    svg-icon__text_larger svg-icon__text_align-center" x="50%" y="50%" dy=".3em">&#xf086;
+            </text>
+          </svg>
+        </div>
+        <p class="feature__name feature__name_no-upper">Live Support</p>
+        <p class="feature__description">Nulla dapibus neque augue, quis
+          tincidunt tortor aliquam vitae.</p>
+      </a>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="header header_margin header_smaller">
+      <a class="header__logo header__logo_opacity header__logo_left-align" href="/">
+        <img src="img/logo.png?47e4b58cd59d4938e1b602bea5149223" alt="Simple Catalog Logo" width="133" height="29">
+      </a>
+      <label class="menu-toggle" for="menu-toggle_footer"><i class="fa fa-bars" aria-hidden="true"></i></label>
+      <input id="menu-toggle_footer" type="checkbox" hidden>
+      <nav class="navigation navigation_footer">
+        <ul class="menu menu_footer">
+          <li class="menu__item menu__item_uppercase menu__item_smaller menu__item_grey-color"><a href="#">Home</a>
+          </li>
+          <li class="menu__item menu__item_uppercase menu__item_smaller menu__item_grey-color"><a href="#">about
+            us</a></li>
+          <li class="menu__item menu__item_uppercase menu__item_smaller menu__item_grey-color"><a href="#">blog</a>
+          </li>
+          <li class="menu__item menu__item_uppercase menu__item_smaller menu__item_grey-color"><a href="#">policy</a>
+          </li>
+          <li class="menu__item menu__item_uppercase menu__item_smaller menu__item_grey-color"><a href="#">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer">
+      <div class="footer__block footer__block_left footer__block_equal">
+        <p class="footer__text">Lorem ipsum dolor sit amet, consecteteeseurı
+          adipiscing elit. Donec mollis commodoeesene
+          que, non commodo risus volutpat vel.
+          <br><br>
+          Design by <a href="#">Mert Can Eyriyer</a>.</p>
+      </div>
+      <nav class="footer__block footer__block_middle footer__block_bigger">
+        <ul class="footer-menu">
+          <li class="footer-menu__item footer-menu__item_marker"><a href="#">Support</a></li>
+          <li class="footer-menu__item footer-menu__item_marker"><a href="#">Account</a></li>
+          <li class="footer-menu__item footer-menu__item_marker"><a href="#">Product Catalog</a></li>
+          <li class="footer-menu__item footer-menu__item_marker"><a href="#">Shortcodes</a></li>
+        </ul>
+        <ul class="footer-menu">
+          <li class="footer-menu__item footer-menu__item_marker"><a href="#">Site Map</a></li>
+          <li class="footer-menu__item footer-menu__item_marker"><a href="#">Whois Serach</a></li>
+          <li class="footer-menu__item footer-menu__item_marker"><a href="#">Web Mail</a></li>
+          <li class="footer-menu__item footer-menu__item_marker"><a href="#">Find Domain</a></li>
+        </ul>
+      </nav>
+      <div class="footer__block footer__block_right footer__block_equal">
+        <ul class="footer-menu">
+          <li class="footer-menu__item footer-menu__item_marker footer-menu__item_phone">
+            <a href="tel:0000-0000-0000">0000-0000-0000</a>
+          </li>
+          <li class="footer-menu__item footer-menu__item_marker footer-menu__item_email">
+            <a href="mailto:informationteam@ghosthost.com">informationteam@ghosthost.com</a>
+          </li>
+          <li class="footer-menu__item">
+            <address>Lorem Ipsum Street, Lorem Avenue,<br><br>
+              Lorem Ipsum
+            </address>
+          </li>
+        </ul>
+
+
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>

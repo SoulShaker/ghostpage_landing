@@ -1,0 +1,43 @@
+.custom-input {
+	display: flex;
+	border: 1px solid #d9d9d9;
+	padding: 8px 0;
+	margin: 42px 0;
+
+	&__prepend {
+		padding: 0 15px;
+		border-right: 1px solid #d9d9d9;
+	}
+	&__input {
+		flex-grow: 1;
+		height: 32px;
+		padding: 0 15px;
+		font-family: "Lato Semibold", sans-serif;
+		@include font(15px,#868686,normal,1);
+		border: none;
+		outline: none;
+
+		@media screen and (max-width: 480px) {
+			font-size: 10px;
+		}
+	}
+	&__text {
+		font-family: "Lato", sans-serif;
+		@include font(16px,#cbcbcb,400,32px);
+
+		@media screen and (max-width: 480px) {
+			font-size: 12px;
+		}
+	}
+	&__append {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		padding: 0 12px 0 11px;
+		border-left: 1px solid #d9d9d9;
+
+		@media screen and (max-width: 480px) {
+			padding-left: 5px;
+		}
+	}
+}

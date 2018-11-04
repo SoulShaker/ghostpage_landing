@@ -1,0 +1,41 @@
+.testimonials {
+	height: 190px;
+	background-image: url("images/istanbul-ofis-piyasasi.jpg");
+	background-size: cover;
+	background-position-y: 70%;
+
+	@media screen and (max-width: 480px) {
+		height: 300px;
+	}
+
+	&:after {
+		z-index: 1;
+	}
+}
+
+.quote {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	&__block {
+		display: flex;
+	}
+
+	&__text {
+		margin-bottom: 20px;
+
+		@media screen and (max-width: 480px) {
+			padding: 0 20px;
+		}
+	}
+
+	&__author {
+		font-family: "Lato", sans-serif;
+		@include font(20px,#fff,600,1);
+		padding-left: 20px;
+		padding-right: 12px;
+		border-right: 1px solid #fff;
+	}
+}

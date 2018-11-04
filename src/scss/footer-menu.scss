@@ -1,0 +1,51 @@
+.footer-menu {
+	&:not(:last-child) {
+		padding-right: 68px;
+	}
+	&__item {
+		font-family: "Lato", sans-serif;
+		@include font(15px,#686868,300,1);
+		transition: color .3s linear;
+
+		&:not(:last-child) {
+			padding-bottom: 13px;
+		}
+		a {
+			display: inline-block;
+			transition: transform .3s linear;
+		}
+
+		&:hover {
+			color: #fff;
+			a {
+				transform: translateX(8px);
+			}
+		}
+
+		&_marker {
+			display: flex;
+			align-items: center;
+
+			&:before {
+				content: '\f054';
+				display: inline-block;
+				font-family: "FontAwesome";
+				font-size: 10px;
+				margin-right: 8px;
+				vertical-align: middle;
+			}
+		}
+		&_phone {
+			&:before {
+				content: '\f095';
+				font-size: 12px;
+			}
+		}
+		&_email {
+			&:before {
+				content: '\f0e0';
+				font-size: 12px;
+			}
+		}
+	}
+}
