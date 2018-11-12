@@ -23,7 +23,6 @@
 		left: 0;
 		right: 0;
 		opacity: 1;
-		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
 
@@ -38,7 +37,6 @@
 		left: 0;
 		right: 0;
 		opacity: 1;
-		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
 
@@ -57,14 +55,11 @@
 	}
 
 	.custom-carousel__activator:nth-of-type(2):checked ~ .custom-carousel__slide:nth-of-type(2) {
-		transition: opacity 0.5s, -webkit-transform 0.5s;
 		transition: opacity 0.5s, transform 0.5s;
-		transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
 		top: 0;
 		left: 0;
 		right: 0;
 		opacity: 1;
-		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
 
@@ -88,7 +83,6 @@
 		left: 0;
 		right: 0;
 		opacity: 1;
-		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
 
@@ -122,12 +116,10 @@
 	}
 	.custom-carousel__control--backward {
 		left: 10px;
-		-webkit-transform: rotate(-135deg);
 		transform: rotate(-135deg);
 	}
 	.custom-carousel__control--forward {
 		right: 10px;
-		-webkit-transform: rotate(45deg);
 		transform: rotate(45deg);
 	}
 
